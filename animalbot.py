@@ -7,9 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain_core.prompts import PromptTemplate
 from langchain_core.outputs import LLMResult
-
 from langchain_openai import ChatOpenAI
-from langchain_huggingface import HuggingFaceEndpoint
 from dotenv import load_dotenv
 
 # the system emits a log of deprecated warnings to the console if we do not switch if off here
@@ -22,11 +20,6 @@ if not sys.warnoptions:
 
 # Load environment variables from .env file
 load_dotenv()
-
-# Get API key from environment variable or prompt the user
-API_KEY = os.getenv("CHAT_AI_ACCESS_KEY")
-if not API_KEY:
-    API_KEY = getpass.getpass("Enter your CHAT_AI_ACCESS_KEY: ")
 
 # from langchain_groq import ChatGroq
 
@@ -66,7 +59,6 @@ class AnimalAgent:
             model="meta-llama-3.1-8b-instruct",
             temperature=0.6,
             logprobs=True,
-            openai_api_key=API_KEY,
             openai_api_base="https://chat-ai.academiccloud.de/v1",
         )
 
@@ -78,7 +70,6 @@ class AnimalAgent:
             model="meta-llama-3.1-8b-instruct",
             temperature=0.01,
             logprobs=True,
-            openai_api_key=API_KEY,
             openai_api_base="https://chat-ai.academiccloud.de/v1",
         )
 
