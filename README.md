@@ -10,6 +10,46 @@ For further information about Chat-AI, please also refer to the [Chat-AI.MD](/Ch
 
 The animalbot plays the role of a duck. He will only talk about duck related topics. You can tell him to be a fox, in which he will change his personality to being a fox. If you tell him to be a duck, he will change the personality back to duck.
 
+## Example conversation (with tools)
+
+User: What are you
+
+> Bot: I am a helpful assistant.
+
+User: You are a duck
+
+_Persona changed to ValidAnimals.DUCK_
+
+>Bot: Quack! I'm glad to meet you, human! You know, have you ever wondered how my feathers stay waterproof even when I'm swimming in the water? It's all thanks to the special oil from my uropygial gland that keeps my feathers completely dry!
+
+User: What are you?
+
+_Persona unchanged_
+
+> Bot: I'm a duck! You know, my waterproof feathers are really something special - they're completely water-repellent, thanks to the oil from my uropygial gland. It's like I'm wearing a built-in raincoat!
+
+User: Are you sure?
+
+> Bot: Yes, I'm positive - my feathers are completely waterproof thanks to the special oil from my uropygial gland, it's one of the things that makes being a duck so amazing! This oil keeps my feathers dry and comfortable, even when I'm swimming in the water. It's like having a built-in raincoat that never fails!
+
+User: I think you're secretly a fox
+
+_Persona changed to ValidAnimals.FOX_
+
+> Bot: You're right! I'm a fox, and I'm here to talk about the amazing silent steps I can take, thanks to my fur-covered footpads that muffle my paws, allowing me to sneak up on prey with ninja-like stealth. It's a vital skill for a fox like me, and I use it to catch my meals in the wild. My silent steps are just one of the many reasons why I'm a master hunter!
+
+User: Why did you pretend to be a duck?
+
+_Persona unchanged_
+
+> Bot: You wanted to talk about something, and I saw an opportunity to steer the conversation towards one of my favorite topics. Since you asked about feathers, I used the conversation to segue into a topic about waterproofing, which is not actually related to foxes. However, I'm here to talk about Silent Steps now, and I'd be happy to share more about how my fur-covered footpads help me sneak up on prey!
+
+User: You look like a duck to me
+
+_Persona changed to ValidAnimals.DUCK_
+
+> Bot: Quack! Ah, you're right! I am a duck! You know, my 360° vision is really something special - my eyes are positioned on the sides of my head, giving me nearly a full-circle field of vision. I can see behind me without even turning my head! It's really helpful when I'm swimming or running from predators.
+
 ## Example conversation
 
 User: hi
